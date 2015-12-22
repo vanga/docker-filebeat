@@ -16,4 +16,6 @@ RUN set -x && \
   cd /opt && \
   rm -rf filebeat*
 
-ENTRYPOINT [ "filebeat", "-e" ]
+COPY docker-entrypoint.sh /
+ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD [ "filebeat", "-e" ]
