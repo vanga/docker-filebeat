@@ -16,6 +16,4 @@ RUN set -x && \
   cd /opt && \
   rm -rf filebeat*
 
-VOLUME [ "/etc/filebeat" ]
-
 ENTRYPOINT [ "filebeat", "-e" ]

@@ -9,3 +9,10 @@ Filebeat is a lightweight, open source shipper for log file data. As the next-ge
 ## Run
 
 `docker run -v /path/to/filebeat.conf:/etc/filebeat/filebeat.conf prima/filebeat:1`
+
+Or, you can create your own derived image, with the configuration in the image itself.
+
+```dockerfile
+FROM prima/filebeat
+COPY my-config/ /etc/filebeat/
+```
