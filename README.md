@@ -6,6 +6,10 @@ Filebeat is a lightweight, open source shipper for log file data. As the next-ge
 
 -	[`1.0.1`, `1.0`, `1`, `latest` (*Dockerfile*)](https://github.com/primait/docker-filebeat/blob/master/Dockerfile)
 
+## Build and update process
+
+This image is automatically built at every push of this repository and every time that the `debian:jessie` base image gets updated in order to ensure that bugfixes and security updates are immediately applied.
+
 ## Run
 
 `docker run -v /path/to/filebeat.conf:/etc/filebeat/filebeat.conf prima/filebeat:1`
