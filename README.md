@@ -4,7 +4,7 @@ Filebeat is a lightweight, open source shipper for log file data. As the next-ge
 
 ## Supported tags and respective `Dockerfile` links
 
--	[`1.1.0`, `1.1`, `1`, `latest` (*Dockerfile*)](https://github.com/primait/docker-filebeat/blob/master/Dockerfile)
+-	[`1.1.1`, `1.1`, `1`, `latest` (*Dockerfile*)](https://github.com/primait/docker-filebeat/blob/master/Dockerfile)
 
 ## Build and update process
 
