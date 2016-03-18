@@ -12,7 +12,7 @@ This image is automatically built at every push of this repository and every tim
 
 ## Run
 
-`docker run -v /path/to/filebeat.conf:/etc/filebeat/filebeat.conf prima/filebeat:1`
+`docker run -v /path/to/filebeat.conf:/etc/filebeat/filebeat.conf prima/filebeat:1 -c /etc/filebeat/filebeat.conf`
 
 Or, you can create your own derived image, with the configuration in the image itself.
 
