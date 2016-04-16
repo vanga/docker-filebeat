@@ -4,7 +4,7 @@ Filebeat is a lightweight, open source shipper for log file data. As the next-ge
 
 ## Supported tags and respective `Dockerfile` links
 
--	[`1.1.2`, `1.1`, `1`, `latest` (*Dockerfile*)](https://github.com/primait/docker-filebeat/blob/master/Dockerfile)
+-	[`1.2.1`, `1.2`, `1`, `latest` (*Dockerfile*)](https://github.com/primait/docker-filebeat/blob/master/Dockerfile)
 
 ## Build and update process
 
@@ -13,12 +13,12 @@ This image is automatically built at every push of this repository and every tim
 ## Run
 
 ```
-docker run -v /path/to/filebeat.yml:/etc/filebeat/filebeat.yml prima/filebeat:1 -c /etc/filebeat/filebeat.yml
+docker run -v /path/to/filebeat.yml:/filebeat.yml prima/filebeat:1
 ```
 
 Or, you can create your own derived image, with the configuration in the image itself.
 
 ```dockerfile
 FROM prima/filebeat
-COPY my-config/ /etc/filebeat/
+COPY my-config/filebeat.yml /filebeat.yml
 ```
