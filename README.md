@@ -22,3 +22,9 @@ Or, you can create your own derived image, with the configuration in the image i
 FROM prima/filebeat
 COPY my-config/filebeat.yml /filebeat.yml
 ```
+
+## Configuration file
+
+You can find an example of the `filebeat.yml` in the official filebeat repository: https://github.com/elastic/beats/blob/master/filebeat/filebeat.yml
+
+And in the official docs: https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration.html
