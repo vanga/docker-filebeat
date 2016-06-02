@@ -2,13 +2,13 @@ FROM debian:jessie
 
 MAINTAINER Andrea Usuelli <andrea.usuelli@prima.it>
 
-ENV FILEBEAT_VERSION=5.0.0-alpha2 \
-    FILEBEAT_SHA1=902c426168096560edb9ad9792ebdcce33c7aa38
+ENV FILEBEAT_VERSION=5.0.0-alpha3 \
+    FILEBEAT_SHA1=3dd6de93459df04777df223d7651db9700566ed4
 
 RUN set -x && \
   apt-get update && \
   apt-get install -y wget && \
-  wget https://download.elastic.co/beats/filebeat/filebeat-${FILEBEAT_VERSION}-x86_64.tar.gz -O /opt/filebeat.tar.gz && \
+  wget https://download.elastic.co/beats/filebeat/filebeat-${FILEBEAT_VERSION}-linux-x64.tar.gz -O /opt/filebeat.tar.gz && \
   cd /opt && \
   echo "${FILEBEAT_SHA1}  filebeat.tar.gz" | sha1sum -c - && \
   tar xzvf filebeat.tar.gz && \
