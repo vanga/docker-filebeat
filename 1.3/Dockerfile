@@ -20,6 +20,4 @@ RUN set -x && \
   apt-get autoremove -y && \
   apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-COPY docker-entrypoint.sh /
-ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD [ "filebeat", "-e" ]
+CMD [ "filebeat", "-e", "-d" ]
